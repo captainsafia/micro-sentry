@@ -1,0 +1,24 @@
+{
+  "name": "micro-sentry",
+  "version": "1.0.0",
+  "description": "Send errors to Sentry's error tracking service",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "sentry",
+    "micro"
+  ],
+  "author": "Tanmu Labs LLC <devs@tanmulabs.com>",
+  "license": "MIT",
+  "dependencies": {
+    "micro": "^8.0.3",
+    "raven": "^2.1.2"
+  },
+  "devDependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^20.0.4",
+    "test-listen": "^1.0.2"
+  }
+}
