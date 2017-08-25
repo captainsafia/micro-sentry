@@ -1,6 +1,6 @@
 # micro-sentry
 
-`micro-sentry` allows you to send `micro` errors to [Sentry](https://sentry.io).
+`micro-sentry` allows you to send [`micro`](https://github.com/zeit/micro) errors to [Sentry](https://sentry.io).
 
 ### Installation
 
