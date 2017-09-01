@@ -1,4 +1,4 @@
-const { send } = require('micro');
+const { sendError } = require('micro');
 const Raven = require('raven');
 
 module.exports = exports = url => fn => {
@@ -14,10 +14,7 @@ module.exports = exports = url => fn => {
       return await fn(request, response);
     } catch (error) {
       Raven.captureException(error);
-
-      const stat = response.statusCode || 500;
-      const message = { message: error.message };
-      send(response, stat, message);
+      sendError(request, response, error);
     }
   }
 };
