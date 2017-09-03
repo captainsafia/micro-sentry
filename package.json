@@ -13,6 +13,7 @@
   "author": "Tanmu Labs LLC <devs@tanmulabs.com>",
   "license": "MIT",
   "dependencies": {
+    "boom": "^5.2.0",
     "micro": "^8.0.3",
     "raven": "^2.1.2"
   },
