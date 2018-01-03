@@ -14,12 +14,14 @@
   "license": "MIT",
   "dependencies": {
     "boom": "^5.2.0",
-    "micro": "^8.0.3",
     "raven": "^2.1.2"
   },
   "devDependencies": {
     "isomorphic-fetch": "^2.2.1",
     "jest": "^20.0.4",
     "test-listen": "^1.0.2"
+  },
+  "peerDependencies": {
+    "micro": "^9.0.2"
   }
 }
