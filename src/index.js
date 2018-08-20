@@ -14,6 +14,7 @@ module.exports = exports = url => fn => {
     try {
       return await fn(request, response);
     } catch (error) {
+      console.error(error);
       Raven.captureException(error);
       let status = response.statusCode;
       if (status < 400) status = 500;
