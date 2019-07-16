@@ -13,8 +13,8 @@
   "author": "Tanmu Labs LLC <devs@tanmulabs.com>",
   "license": "MIT",
   "dependencies": {
-    "boom": "^5.2.0",
-    "raven": "^2.1.2"
+    "boom": "^7.3.0",
+    "raven": "^2.6.4"
   },
   "devDependencies": {
     "isomorphic-fetch": "^2.2.1",
