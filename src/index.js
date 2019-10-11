@@ -17,7 +17,7 @@ module.exports = exports = url => fn => {
       Raven.captureException(error);
       let status = response.statusCode;
       if (status < 400) status = 500;
-      const err = Boom.wrap(error, status);
+      const err = Boom.boomify(error, { statusCode: status });
       send(response, status, Object.assign({}, err.output.payload, 
         err.data && { data : err.data }));
     }
